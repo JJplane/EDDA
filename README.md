@@ -13,11 +13,21 @@ numpy~=1.22.2
 scipy~=1.7.1
 tqdm~=4.62.3
 ```
+```
+conda create -n EDDA python=3.9
+source activate EDDA
+<!-- pip install -r requirements.txt -->
+conda install pytorch==2.0.0 torchvision==0.15.0 torchaudio==2.0.0 pytorch-cuda=11.7 -c pytorch -c nvidia
+pip install dgl-cu111
+pip install scipy==1.7.1
+pip install tqdm
+pip install scikit-learn
+```
 
 ### Guideline to run code
 To run our EDDA
 ```
-python .\run_edda.py --dataset ... --tasks ....
+python run_edda.py --dataset AliCCP --tasks d0 d1 d2
 ```
 
 ### Acknowledgements

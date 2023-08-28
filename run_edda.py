@@ -10,7 +10,7 @@ from LibMTL._record import _PerformanceMeter
 from LibMTL.utils import set_random_seed, set_device
 from LibMTL.config import LibMTL_args, prepare_args
 from baseline.EDDA import EDDA
-from data_utils import create_feature_dict
+# from data_utils import create_feature_dict
 from util_functions import *
 from task_dataloader import *
 
